@@ -10,3 +10,11 @@ BuildArch:      armv7hl
 
 %description
 perc is a tool for recursively detecting to which files user and group can write in some path.
+
+%prep
+%setup
+
+%make
+
+%install
+cp bin/perc /usr/bin/perc
